@@ -1,3 +1,4 @@
+// src/App.jsx
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -6,7 +7,7 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import './styles/global.css' // Importante para cargar tus variables y estilos
+import './styles/global.css' // Verifica que esta ruta coincida con tu carpeta
 
 function App() {
   return (
@@ -26,5 +27,4 @@ function App() {
     </div>
   )
 }
-
 export default App
