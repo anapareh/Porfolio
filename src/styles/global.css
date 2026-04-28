@@ -1,0 +1,139 @@
+@import './variables.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Side by side sections ───────────────────────────── */
+.row-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--border);
+}
+
+.row-split > * {
+  border-top: none;
+}
+
+.row-split > *:first-child {
+  border-right: 1px solid var(--border);
+}
+
+/* ── Inner content constraint ────────────────────────── */
+.section-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--section-pad-x);
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* ── Utility classes ───────────────────────────────── */
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.section-divider {
+  border-top: 1px solid var(--border);
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.tag--accent {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.tag--blue {
+  background: var(--blue-bg);
+  color: var(--blue);
+  border: 1px solid var(--blue-border);
+}
+
+.tag--orange {
+  background: var(--orange-bg);
+  color: var(--orange);
+  border: 1px solid var(--orange-border);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  transition: opacity var(--transition);
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: var(--bg-base);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.btn--sm {
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 400;
+}

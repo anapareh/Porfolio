@@ -1,0 +1,41 @@
+.contact {
+  padding: var(--section-pad-y) 0;
+  width: 100%;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.contact__input {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.contact__input::placeholder {
+  color: var(--text-muted);
+}
+
+.contact__input:focus {
+  border-color: var(--accent-mid);
+}
+
+.contact__textarea {
+  resize: vertical;
+  min-height: 130px;
+}

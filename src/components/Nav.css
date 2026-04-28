@@ -1,0 +1,72 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px var(--section-pad-x);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--bg-base);
+  z-index: 100;
+}
+
+.nav__logo {
+  font-size: 18px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav__links a {
+  font-size: 14px;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+
+.nav__links a:hover {
+  color: var(--text-primary);
+}
+
+.nav__divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+}
+
+.nav__github {
+  display: flex;
+  align-items: center;
+  transition: opacity var(--transition);
+}
+
+.nav__github:hover {
+  opacity: 0.7;
+}
+
+.nav__cv {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent-dim);
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  transition: background var(--transition);
+}
+
+.nav__cv:hover {
+  background: var(--accent-bg);
+}
