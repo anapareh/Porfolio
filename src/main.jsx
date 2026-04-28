@@ -1,10 +1,30 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import About from './components/About'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import './styles/global.css' // Importante para cargar tus variables y estilos
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+function App() {
+  return (
+    <div className="page-wrap">
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <div className="row-split">
+          <Projects />
+          <Experience />
+        </div>
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  )
+}
+
+export default App
