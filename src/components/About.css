@@ -1,41 +1,30 @@
 .about {
   width: 100%;
-  min-height: 80vh;
 }
 
-/* ── Dos columnas ──────────────────────────────────── */
+/* ── Apilado: texto arriba, galería abajo ──────────── */
 .about__layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  align-items: stretch;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  min-height: 80vh;
 }
 
-/* ── Columna izquierda ─────────────────────────────── */
+/* ── Texto ─────────────────────────────────────────── */
 .about__left {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 64px var(--section-pad-x);
-  height: 100%;
+  padding: 64px 0 40px;
 }
 
 .about__avatar {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), #0369a1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--bg-base);
+  object-fit: cover;
   flex-shrink: 0;
-  user-select: none;
   margin-bottom: 24px;
+  border: 2px solid var(--accent-dim);
 }
 
 .about__bio {
@@ -78,39 +67,4 @@
   margin-top: 2px;
 }
 
-/* ── Galería derecha ───────────────────────────────── */
-.about__gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
-  height: 100%;
-}
 
-.about__photo {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-}
-
-.about__photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.about__photo-placeholder {
-  width: 100%;
-  height: 100%;
-  background: var(--bg-card);
-  background-image: radial-gradient(circle, #00e5b410 1px, transparent 1px);
-  background-size: 16px 16px;
-}
-
-/* Primera foto ocupa dos filas */
-.about__photo:first-child {
-  grid-row: span 2;
-}

@@ -4,10 +4,9 @@
 }
 
 .skills__layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .skills__primary {

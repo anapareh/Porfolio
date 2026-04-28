@@ -11,7 +11,7 @@ const projects = [
       accent: ['Node.js', 'MySQL', 'JWT'],
       blue:   ['React', 'Electron'],
     },
-    github: '#',
+    github: 'https://github.com/anapareh/gestcon',
     caseStudy: '#',
   },
   /* Añade más proyectos aquí */
@@ -35,7 +35,7 @@ function ProjectCard({ project }) {
         ))}
       </div>
       <div className="project-card__actions">
-        <a href={project.github} className="btn btn--outline btn--sm">GitHub →</a>
+        <a href={project.github} className="btn btn--outline btn--sm" target="_blank" rel="noreferrer">GitHub →</a>
         <a href={project.caseStudy} className="btn btn--ghost btn--sm">Case Study →</a>
       </div>
     </article>

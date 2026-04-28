@@ -2,30 +2,30 @@ import './Experience.css'
 
 const entries = [
   {
-    id: 'wozell',
-    title: '', /* Título del puesto */
-    company: '', /* Empresa */
-    dates: '', /* Período */
-    description: '', /* Descripción */
+    id: 'Woztell',
+    title: 'Backend Developer and help desk', /* Título del puesto */
+    company: 'Wozell', /* Empresa */
+    dates: '2025-2026', /* Período */
+    description: 'Prácticas en empresa de comunicaciones empresariales donde trabajé en el desarrollo e integración de automatizaciones entre plataformas, consumo de APIs REST y GraphQL, y resolución de incidencias técnicas en entornos de producción. Con contacto directo con clientes y gestión simultánea de varios proyectos.', /* Descripción */
     badge: null,
     active: true,
+  },
+  { 
+    id: 'Desarollo de aplicaciones Multiplataforma',
+    title: 'Desarollo de aplicaciones Multiplataforma',
+    company: 'Ies Abastos',
+    dates: 'finalizado en 2025',
+    description: 'Formación en desarrollo fullstack, bases de datos relacionales, programación orientada a objetos y despliegue de aplicaciones.',
+    badge: 'origen de GestCon',
+    active: false,
   },
   {
     id: 'consulado',
-    title: '',
-    company: '',
-    dates: '',
-    description: '',
-    badge: 'origen de GestCon',
-    active: true,
-  },
-  {
-    id: 'fotografia',
-    title: '',
-    company: '',
-    dates: '',
-    description: '',
-    badge: null,
+    title: 'Consulado Mali',
+    company: 'Consulado honorario de Mali en Valencia',
+    dates: '2018',
+    description: 'Apoyo en la tramitación de documentos consulares (pasaportes, salvoconductos y certificados), atención a ciudadanos y gestión de expedientes mediante herramientas ofimáticas.',
+    badge: '',
     active: false,
   },
 ]

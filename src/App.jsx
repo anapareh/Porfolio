@@ -12,16 +12,16 @@ export default function App() {
     <>
       <Nav />
       <Hero />
-      <main>
-        <About />
-        <div className="row-split">
+      <div className="page-wrap">
+        <main>
+          <About />
           <Skills />
           <Projects />
-        </div>
-        <Experience />
-        <Contact />
-      </main>
-      <Footer />
+          <Experience />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }

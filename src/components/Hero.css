@@ -1,7 +1,6 @@
 .hero {
-  padding: var(--section-pad-y) var(--section-pad-x);
+  padding: var(--section-pad-y) 56px;
   position: relative;
-  overflow: hidden;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -25,7 +24,7 @@
   position: relative;
   max-width: 960px;
   margin: 0 auto 8%;
-  padding: 0 var(--section-pad-x);
+  padding: 0;
   width: 100%;
 }
 

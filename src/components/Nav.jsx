@@ -28,7 +28,7 @@ export default function Nav() {
           <IconGitHub size={16} color="var(--text-muted)" />
         </a>
 
-        <a href="/CV.pdf" download className="nav__cv btn--cv mono">
+        <a href="/CV_Ana_Maria_Pare_Zerbo.pdf" target="_blank" rel="noreferrer" className="nav__cv btn--cv mono">
           <IconDownload size={12} />
           CV.pdf
         </a>

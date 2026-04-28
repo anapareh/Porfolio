@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,26 +20,27 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ── Page wrapper ────────────────────────────────────── */
+.page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 56px;
+}
+
 /* ── Side by side sections ───────────────────────────── */
 .row-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid var(--border);
 }
 
 .row-split > * {
   border-top: none;
 }
 
-.row-split > *:first-child {
-  border-right: 1px solid var(--border);
-}
-
 /* ── Inner content constraint ────────────────────────── */
 .section-inner {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 var(--section-pad-x);
   width: 100%;
 }
 
@@ -72,7 +74,6 @@ textarea {
 }
 
 .section-divider {
-  border-top: 1px solid var(--border);
 }
 
 .tag {
