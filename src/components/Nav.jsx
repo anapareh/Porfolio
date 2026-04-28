@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <nav className="nav">
       <a href="#hero" className="nav__logo mono">
-        ana.dev
+        anapare.dev
       </a>
 
       <div className="nav__right">
