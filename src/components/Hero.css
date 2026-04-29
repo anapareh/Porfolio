@@ -68,6 +68,16 @@
 .code-str     { color: #a5d6ff; }
 .code-cursor  { color: var(--accent); }
 
+.hero__cursor {
+  display: inline-block;
+  color: var(--accent);
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
 .hero__ctas {
   display: flex;
   gap: 14px;

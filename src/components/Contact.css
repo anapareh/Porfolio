@@ -39,3 +39,21 @@
   resize: vertical;
   min-height: 130px;
 }
+
+.contact__footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact__feedback {
+  font-size: 14px;
+}
+
+.contact__feedback--ok {
+  color: var(--accent);
+}
+
+.contact__feedback--err {
+  color: #f87171;
+}

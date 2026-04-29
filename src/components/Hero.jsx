@@ -1,6 +1,22 @@
+import { useState, useEffect } from 'react'
 import './Hero.css'
 
+const FULL_NAME = 'Ana Maria Pare Zerbo'
+const ACCENT_START = 10
+
 export default function Hero() {
+  const [displayed, setDisplayed] = useState('')
+  const done = displayed.length >= FULL_NAME.length
+
+  useEffect(() => {
+    if (done) return
+    const t = setTimeout(() => setDisplayed(FULL_NAME.slice(0, displayed.length + 1)), 80)
+    return () => clearTimeout(t)
+  }, [displayed, done])
+
+  const plain = displayed.slice(0, ACCENT_START)
+  const accent = displayed.slice(ACCENT_START)
+
   return (
     <section className="hero" id="hero">
       <div className="hero__dot-grid" aria-hidden="true" />
@@ -9,8 +25,9 @@ export default function Hero() {
         <div className="hero__eyebrow mono">// fullstack developer</div>
 
         <h1 className="hero__title">
-          {/* Tu nombre aquí */}
-          Ana Maria <span className="hero__title--accent">Pare Zerbo</span>
+          {plain}
+          {accent && <span className="hero__title--accent">{accent}</span>}
+          {!done && <span className="hero__cursor">|</span>}
         </h1>
 
         <p className="hero__subtitle">
