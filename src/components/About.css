@@ -1,5 +1,6 @@
 .about {
   width: 100%;
+  padding: var(--section-pad-y) 56px;
 }
 
 /* ── Apilado: texto arriba, galería abajo ──────────── */

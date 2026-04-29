@@ -9,7 +9,7 @@ export default function About() {
         <div className="about__left">
           <div className="section-label">// sobre mí</div>
 
-          <img className="about__avatar" src="./porfolio_ana/src/images/porfolio_ana.png" alt="Ana Maria Pare Zerbo" />
+          <img className="about__avatar" src="/images/ana.png" alt="Ana Maria Pare Zerbo" />
 
           <p className="about__bio">
             {"Me considero una persona observadora, siempre pensando en cómo agilizar y mejorar lo que me rodea. Después de meses como voluntaria en el Consulado de Malí, vi de primera mano cómo la ineficiencia documental afectaba a personas que venían de muy lejos a hacer sus gestiones. Eso derivó en GestCon — un sistema real, en producción, que resuelve un problema real."}
